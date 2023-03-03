@@ -6,7 +6,7 @@ public class DatabaseLogger implements Logger{
 
 	@Override
 	public void log(Course course) {
-		System.out.println("Veritabanina loglandi : " + course.getCourseName());
+		System.out.println("Logged to the database : " + course.getCourseName());
 		
 	}
 

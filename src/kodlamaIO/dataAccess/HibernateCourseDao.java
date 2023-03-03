@@ -6,21 +6,21 @@ public class HibernateCourseDao implements CourseDao{
 	
 	@Override
 	public void add(Course course) {
-		System.out.println("Hibernate ile veritabanina eklendi : " + course.getCourseName()  + " -- " + course.getInstructor());
+		System.out.println("Added to database with hibernate : " + course.getCourseName()  + " -- " + course.getInstructor());
 		
 	}
 	
 	
 	@Override
 	public void update(Course course) {
-		System.out.println("Hibernate ile veritabanina guncellendi : " + course.getCourseName()  + " -- " + course.getInstructor());
+		System.out.println("Updated to database with hibernate : " + course.getCourseName()  + " -- " + course.getInstructor());
 		
 	}
 	
 	
 	@Override
 	public void delete(Course course) {
-		System.out.println("Hibernate ile veritabanina silindi : " + course.getCourseName()  + " -- " + course.getInstructor());
+		System.out.println("Deleted from database with hibernate : " + course.getCourseName()  + " -- " + course.getInstructor());
 		
 	}
 	

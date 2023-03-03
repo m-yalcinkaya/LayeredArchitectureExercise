@@ -23,19 +23,19 @@ public class CourseManager {
 	public void add(Course course) throws Exception {
 		
 		if(course.getCoursePrice() < 0) {
-			throw new Exception("Bir kursun fiyati 0 tl'den kucuk olamaz.");
+			throw new Exception("The cost of a course cannot be less than 0 TL.");
 		}
 		
 		
 			for (String category : categoryNames) {
 				if(category == course.getCategoryName()) {
-					throw new Exception("Bu isimde bir kategori zaten var !!");
+					throw new Exception("There is already a category with this name !!");
 				}
 			}
 		
 			for (String courseName : courseNames) {
 				if(courseName == course.getCourseName()) {
-					throw new Exception("Bu isimde bir kurs ismi zaten var !!");
+					throw new Exception("There is already a course with this name !!");
 				}
 			}	
 		
