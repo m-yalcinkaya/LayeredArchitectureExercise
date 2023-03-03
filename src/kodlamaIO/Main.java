@@ -25,7 +25,7 @@ public class Main {
 		course3.setCategoryName("Egitim2");
 		course3.setCourseName("Javascript");
 		course3.setCoursePrice(500);
-		course3.setInstructor("Emine Zeren Inan");
+		course3.setInstructor("Selin Yoruk");
 		
 		CourseManager courseManager = new CourseManager(new HibernateCourseDao());
 		courseManager.add(course1);
